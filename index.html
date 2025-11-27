@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NEW Red Background Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 40px;
+      background: #ffffff;
+    }
+
+    /* Red background NEW badge */
+    .new-badge-red {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #ffffff;          /* White letters */
+      background: #c62828;     /* Red background */
+      border-radius: 14px;
+      vertical-align: middle;
+    }
+
+    /* Soft corporate pulse on the badge */
+    @keyframes redBadgePulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(198, 40, 40, 0.6);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(198, 40, 40, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(198, 40, 40, 0);
+      }
+    }
+
+    .pulse {
+      animation: redBadgePulse 2.8s ease-out infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Example file list (Red background NEW!)</h1>
+
+  <p>
+    FY2026 Financial Report
+    <span class="new-badge-red pulse">NEW!</span>
+  </p>
+
+  <p>
+    Sustainability Committee Minutes
+    <span class="new-badge-red pulse">NEW!</span>
+  </p>
+
+</body>
+</html>
